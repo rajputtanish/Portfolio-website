@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ArrowRight, Mail, Terminal, Code2 } from "lucide-react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import logo from "../assets/logo.png";
 // import { Github, , Linkedin } from "lucide-react";
 
 const Home = () => {
@@ -80,7 +81,11 @@ const Home = () => {
             <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500 to-violet-500 rounded-full blur-3xl opacity-30 animate-pulse" />
             <div className="relative w-64 h-64 bg-slate-800/80 backdrop-blur-xl border border-white/10 rounded-3xl shadow-2xl flex items-center justify-center overflow-hidden animate-[bounce_4s_infinite]">
               <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-violet-500/10" />
-              <Code2 className="w-24 h-24 text-cyan-400 opacity-80" />
+              <img
+                src={logo}
+                alt="Tanish Rajput"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
